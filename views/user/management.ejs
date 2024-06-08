@@ -1,0 +1,48 @@
+<!-- views/user/management.ejs -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 기본 설정에 필요한 css와 js 파일 로드 -->
+    <%- include('../templates/head') %>
+
+    <link rel="stylesheet" href="/css/user/management.css">
+    <script type="module" src="/js/user/management.js" defer></script>
+
+    <title>청운 도서 관리</title>
+</head>
+
+<body>
+    <!-- 헤더 로드 -->
+    <%- include('../templates/b-header') %>
+
+    <!-- 도서 테이블 -->
+    <section id="read-form">
+        <h1>회원 목록</h1>
+        
+        <table id="read-table">
+            <thead>
+                <tr id=field>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>이메일</th>
+                    <th>관리자 여부</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+        <article id="btns">
+            <button id="create-btn">관리자 등록</button>
+            <button id="update-btn">수정</button>
+            <button id="delete-btn">삭제</button>
+          </article>
+    </section>
+    
+</body>
+
+</html>

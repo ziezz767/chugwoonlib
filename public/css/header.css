@@ -1,0 +1,129 @@
+@import "reset.css";
+
+:root {
+    --head-bgcolor : rgb(239, 243, 255);
+    --head-logo-i-color: rgb(143, 158, 255);
+  
+    --bg-main-color: rgba(255, 251, 246, 0.331);
+  
+    --btn-hover-color: rgba(43, 43, 43, 0.242);
+  
+    --input-bg-color: rgba(254, 251, 248, 0.331);
+    --input-outline-color: rgb(143, 158, 255);
+  
+    --font-main-color: rgb(43, 43, 43);
+    --font-large: 24px;
+    --fonr-medium: 18px;
+  
+    --form-shadow-color: rgb(143, 158, 255);
+
+    --tab-menu-color: rgb(143, 158, 255);
+}
+
+body {
+    color: var(--font-main-color);
+    background-color: var(--bg-main-color);
+}
+
+button {
+    background:none;
+    border:0;
+    outline:0;
+    cursor:pointer;
+}
+
+.deactive {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 26px;
+    color: var(--font-main-color);
+    font-size: var(--font-large);
+    font-weight: 700;
+    background-color: var(--head-bgcolor);
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+
+}
+
+header #logo:hover {
+    cursor: pointer;
+}
+
+header #logo i {
+    font-size: 40px;
+    color: var(--head-logo-i-color);
+}
+
+header #logo h1 {
+    margin-left: 5px;
+}
+
+header #status-list #sign-in:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+header #status-list #sign-out:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+header #status-list #book-create:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.tab-wrap {
+    margin: 14px 0 0 7vw;
+}
+
+.menu-container {
+    display: flex;
+}
+
+.menu-btn {
+    width: 85px;
+    height: 40px;
+    border-bottom: 2px solid;
+    margin-bottom: 4px;
+}
+
+.menu-btn.on {
+    border-bottom: 2px solid var(--tab-menu-color);
+    font-weight: 700;
+    color: var(--tab-menu-color);
+}
+
+.menu-btn:hover {
+    font-weight: 700;
+    color: var(--tab-menu-color);
+}
+
+.box-container {
+    display: none;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.box-container.on {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 60px;
+    margin-bottom: 4px;
+}
+
+.box:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
